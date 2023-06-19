@@ -1,7 +1,7 @@
 {
   "name": "leiloes",
   "title": "Leilões",
-  "description": "Leilões SEPLAG de 2019 a 2023 - [Decreto 45242/2009](https://www.almg.gov.br/consulte/legislacao/completa/completa.html?tipo=DEC&num=45242&ano=2009)",
+  "description": "Leilões SEPLAG de 2019 a 2023 - [Decreto 45242/2009](https://www.almg.gov.br/consulte/legislacao/completa/completa.html?tipo=DEC&num=45242&ano=2009).",
   "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
   "source": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes",
   "homepage": "https://github.com/dados-mg/leiloes",
@@ -30,19 +30,18 @@
     "leilões",
     "alienações"
   ],
-  "scheme": "file",
+  "profile": "data-package",
   "resources": [
     {
-      "path": "data/leiloes-2019-2023.csv",
-      "name": "leiloes-2019-2023",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8-sig",
       "dialect": {
         "delimiter": ";"
       },
+      "encoding": "utf-8-sig",
+      "format": "csv",
+      "hashing": "md5",
+      "name": "leiloes-2019-2023",
+      "path": "data/leiloes-2019-2023.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
@@ -90,8 +89,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "scheme": "file"
     }
-  ],
-  "profile": "data-package"
+  ]
 }
