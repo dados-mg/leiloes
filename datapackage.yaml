@@ -1,0 +1,58 @@
+name: leiloes
+title: Leilões
+description: Leilões SEPLAG de 2019 a 2023 - [Decreto 45242/2009](https://www.almg.gov.br/consulte/legislacao/completa/completa.html?tipo=DEC&num=45242&ano=2009).
+owner_org: secretaria-de-estado-de-planejamento-e-gestao-seplag
+source: https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes
+homepage: https://github.com/dados-mg/leiloes
+frequência de atualização: mensal
+version: 0.0.9
+contributors:
+  - title: Comissão de Alienação da SEPLAG
+    role: publisher
+    email: comissao.alienacao@planejamento.mg.gov.br
+  - title: Diretoria Central de Transparência Ativa da Controladoria-Central do Estado
+    role: maintainer
+    email: transparencia@cge.mg.gov.br
+licenses:
+  - name: CC-BY-4.0
+    title: Creative Commons Attribution 4.0
+    path: https://creativecommons.org/licenses/by/4.0/
+frequência de atualização: mensal
+keywords: 
+  - 'leilões'
+  - 'alienações'
+profile: data-package
+resources:
+  - dialect:
+      delimiter: ;
+    encoding: utf-8-sig
+    format: csv
+    hashing: md5
+    name: leiloes-2019-2023
+    path: data/leiloes-2019-2023.csv
+    profile: tabular-data-resource
+    schema:
+      fields:
+        - name: ano
+          type: integer
+        - name: leilao
+          type: integer
+        - name: lote
+          type: integer
+        - name: descricao
+          type: string
+        - name: orgao_de_origem
+          type: integer
+        - name: status
+          type: string
+        - name: valor_lance_inicial
+          type: number
+        - name: valor_lance_final
+          type: string
+        - name: status_do_pagamento
+          type: string
+        - name: material
+          type: string
+        - name: placa
+          type: string
+    scheme: file

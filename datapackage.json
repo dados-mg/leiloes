@@ -4,7 +4,7 @@
   "description": "Leilões SEPLAG de 2019 a 2023 - [Decreto 45242/2009](https://www.almg.gov.br/consulte/legislacao/completa/completa.html?tipo=DEC&num=45242&ano=2009)",
   "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
   "source": "https://www.mg.gov.br/planejamento/pagina/gestao-governamental/logistica-e-patrimonio/leiloes",
-  "homepage": "https://github.com/transparencia-mg/leiloes",
+  "homepage": "https://github.com/dados-mg/leiloes",
   "frequência de atualização": "mensal",
   "version": "0.0.9",
   "contributors": [
