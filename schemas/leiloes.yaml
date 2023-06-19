@@ -1,0 +1,35 @@
+profile: data-package
+resources:
+  - dialect:
+      delimiter: ;
+    encoding: utf-8-sig
+    format: csv
+    hashing: md5
+    name: leiloes-2019-2023
+    path: data/leiloes-2019-2023.csv
+    profile: tabular-data-resource
+    schema:
+      fields:
+        - name: ano
+          type: integer
+        - name: leilao
+          type: integer
+        - name: lote
+          type: integer
+        - name: descricao
+          type: string
+        - name: orgao_de_origem
+          type: integer
+        - name: status
+          type: string
+        - name: valor_lance_inicial
+          type: number
+        - name: valor_lance_final
+          type: string
+        - name: status_do_pagamento
+          type: string
+        - name: material
+          type: string
+        - name: placa
+          type: string
+    scheme: file
