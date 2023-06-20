@@ -62,7 +62,7 @@
           },
           {
             "name": "orgao_de_origem",
-            "type": "integer"
+            "type": "string"
           },
           {
             "name": "status",
