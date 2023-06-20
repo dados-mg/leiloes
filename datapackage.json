@@ -70,7 +70,8 @@
           },
           {
             "name": "valor_lance_inicial",
-            "type": "number"
+            "type": "number",
+            "missingValues": ["-"]
           },
           {
             "name": "valor_lance_final",
