@@ -33,3 +33,4 @@ resources:
         - name: placa
           type: string
     scheme: file
+    
