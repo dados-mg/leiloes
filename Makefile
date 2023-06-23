@@ -15,7 +15,11 @@ list: ## Lista pacotes instalados em ambiente virtual python
 
 validate: ## Valida dataset e todos os seus recursos
 	@echo 'Validando conjunto...'
-	@frictionless validate datapackage.json
+	@python scripts/validate.py
+
+report: ## Gerando Relatório de Validação
+	@echo 'Gerando relatório validação html...'
+	@livemark build index.md --target index.html
 
 create: ## Cria dataset e todos os seus recursos em instância do CKAN
 	@echo 'Criando conjunto...'
@@ -25,9 +29,9 @@ update: ## Atualiza dataset e todos os seus recursos em instância do CKAN
 	@echo "Atualiza conjunto..."
 	@dpckan --datastore dataset update
 
-data: 
+data:
 	@echo "Convertendo arquivos excel para csv"
-	@python ./scripts/convert_csv.py 
+	@python ./scripts/convert_csv.py
 
 resource-create: ## Cria recursos em instância do CKAN
 	@echo "Criando no CKAN recursos inexistentes..."

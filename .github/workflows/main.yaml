@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: pip install
+        run: pip install -r requirements.txt
       - name: Clean
         run: make clean
       - name: Data
@@ -28,6 +30,14 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
       - name: Compare
         run: make compare
+      - name: Validate
+        run: make validate
+      - name: Commit new datapackage_validation.json
+        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Report
+        run: make report
+      - name: Commit index.html
+        uses: stefanzweifel/git-auto-commit-action@v4
   validate:
   # this workflow will automate datapackage validation with frictionless
   # for more information see: https://repository.frictionlessdata.io/

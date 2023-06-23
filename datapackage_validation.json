@@ -1,0 +1,110 @@
+{
+  "version": "4.16.6",
+  "time": 0.214,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "dialect": {
+          "delimiter": ";"
+        },
+        "encoding": "utf-8-sig",
+        "format": "csv",
+        "hashing": "md5",
+        "name": "leiloes-2019-2023",
+        "path": "data/leiloes-2019-2023.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "ano",
+              "type": "integer"
+            },
+            {
+              "name": "leilao",
+              "type": "integer"
+            },
+            {
+              "name": "lote",
+              "type": "integer"
+            },
+            {
+              "name": "descricao",
+              "type": "string"
+            },
+            {
+              "name": "orgao_de_origem",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "string"
+            },
+            {
+              "name": "valor_lance_inicial",
+              "type": "number",
+              "missingValues": [
+                "-"
+              ]
+            },
+            {
+              "name": "valor_lance_final",
+              "type": "string"
+            },
+            {
+              "name": "status_do_pagamento",
+              "type": "string"
+            },
+            {
+              "name": "material",
+              "type": "string"
+            },
+            {
+              "name": "placa",
+              "type": "string"
+            }
+          ]
+        },
+        "scheme": "file",
+        "stats": {
+          "hash": "78cdbd9fae96e11bc7d3b2e9ecfce50d",
+          "bytes": 2170055,
+          "fields": 11,
+          "rows": 8945
+        }
+      },
+      "time": 0.2,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}
