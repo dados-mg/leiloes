@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.214,
+  "time": 0.329,
   "errors": [],
   "tasks": [
     {
@@ -34,7 +34,7 @@
             },
             {
               "name": "orgao_de_origem",
-              "type": "string"
+              "type": "integer"
             },
             {
               "name": "status",
@@ -42,10 +42,7 @@
             },
             {
               "name": "valor_lance_inicial",
-              "type": "number",
-              "missingValues": [
-                "-"
-              ]
+              "type": "number"
             },
             {
               "name": "valor_lance_final",
@@ -67,13 +64,13 @@
         },
         "scheme": "file",
         "stats": {
-          "hash": "78cdbd9fae96e11bc7d3b2e9ecfce50d",
-          "bytes": 2170055,
+          "hash": "c7dff41848cf2c756647dbe629f9d6b0",
+          "bytes": 2170056,
           "fields": 11,
           "rows": 8945
         }
       },
-      "time": 0.2,
+      "time": 0.311,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -95,16 +92,110 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "-",
+          "fieldName": "valor_lance_inicial",
+          "fieldNumber": 7,
+          "fieldPosition": 7,
+          "cells": [
+            "2019",
+            "33",
+            "27",
+            "GKT6957 FIAT/ELBA WEEKEND 1992 1993 9BD146000N3905850 3595567 SUCATA",
+            "1400",
+            "Lote Suspenso",
+            "-",
+            "0,0",
+            "Lote Suspenso",
+            "Automóvel",
+            "GKT6957"
+          ],
+          "rowNumber": 964,
+          "rowPosition": 965,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"number/default\"",
+          "message": "Type error in the cell \"-\" in row \"965\" and field \"valor_lance_inicial\" at position \"7\": type is \"number/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "-",
+          "fieldName": "valor_lance_inicial",
+          "fieldNumber": 7,
+          "fieldPosition": 7,
+          "cells": [
+            "2019",
+            "33",
+            "34",
+            "HMH1459  FIAT/UNO MILLE FIRE FLEX 2007 2008 9BD15802786048597 146E1011*7869668* RECUPERÁVEL",
+            "2370",
+            "Lote Suspenso",
+            "-",
+            "0,0",
+            "Lote Suspenso",
+            "Automóvel",
+            "HMH1459"
+          ],
+          "rowNumber": 971,
+          "rowPosition": 972,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"number/default\"",
+          "message": "Type error in the cell \"-\" in row \"972\" and field \"valor_lance_inicial\" at position \"7\": type is \"number/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "1450 / 2270",
+          "fieldName": "orgao_de_origem",
+          "fieldNumber": 5,
+          "fieldPosition": 5,
+          "cells": [
+            "2020",
+            "3",
+            "33",
+            "Nro.Patr. : 021762465 Nro.Placa : HNH1293 Situacao : INDEFINIDO TIPO : 7 Especie : PASSAGEIRO MARCA/MODELO: CITROEN/JUMPER M33M 23S ANO/MODELO : 2010 / 2011 Combustivel : DIESEL",
+            "1450 / 2270",
+            "Arrematado",
+            "3000",
+            "20710,0",
+            "Pagamento Confirmado",
+            "Automóvel",
+            "HNH1293"
+          ],
+          "rowNumber": 2351,
+          "rowPosition": 2352,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"1450 / 2270\" in row \"2352\" and field \"orgao_de_origem\" at position \"5\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 3
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 3,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
