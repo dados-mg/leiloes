@@ -62,7 +62,7 @@
           },
           {
             "name": "orgao_de_origem",
-            "type": "string"
+            "type": "integer"
           },
           {
             "name": "status",
@@ -70,8 +70,7 @@
           },
           {
             "name": "valor_lance_inicial",
-            "type": "number",
-            "missingValues": ["-"]
+            "type": "number"
           },
           {
             "name": "valor_lance_final",
